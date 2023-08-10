@@ -1,0 +1,15 @@
+* {
+    margin: 1px;
+    padding: 1px;
+}
+body{
+    background-color: beige;
+    /* text-align: center; */
+    display: grid;
+    justify-content: center;
+    /* align-items: center; */
+    
+}
+img{
+    width: 300px;
+}
