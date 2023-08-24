@@ -1,0 +1,55 @@
+body {
+    background-color: wheat;
+   
+}
+nav{
+    display: flex;
+    padding: 15px;
+    height: 90px;
+    background-color: slategray;
+}
+nav:hover{
+    color: aqua;
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(161, 45, 45);
+}
+.precio{
+    color: brown;
+}
+section{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+div{
+    height: 315px;
+    padding: 20px;
+    background-color:greenyellow;
+}
+img{
+    border: 1px solid black;
+}
+div, p{
+    font-size: 25px;
+}
+button:hover{
+    box-shadow: 6px 6px 12px black;
+}
+a:active{
+    background-color: gray;
+}
+ol{
+    font-family: fantasy;
+}
+.no:hover{
+    color: red;
+}
+.ofertas{
+    font-weight: bold;
+
+}
