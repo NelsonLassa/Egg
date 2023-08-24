@@ -1,0 +1,48 @@
+body{
+    margin: 0px;
+}
+.articulos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10px;
+}
+.articulo{
+    margin: 10px;
+    box-shadow: 0px 0px 9px rgb(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 10px;   
+}
+img{
+    margin: 0px 10% 0px 10px;
+    width: 80%;    
+}
+.articulo:hover{
+    transform: scale(1.1);
+}
+.barra{
+    display: flex;
+    justify-content: center;    
+    background-color: bisque;
+    padding: 10px;
+    margin: 0px;  
+}
+.nav-link{
+    padding: 10px 15px;
+    margin: 5px;
+    border: 1px solid grey;
+    list-style: none;    
+    background-color: rgb(234, 234, 232);
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+}
+.nav-link:first-child{
+    margin-left: 0px;
+}
+.nav-link:last-child{
+    margin-right: 0px;
+}
+.nav-link:hover{
+    background-color: aquamarine;
+}
