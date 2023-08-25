@@ -1,0 +1,39 @@
+.container{
+
+}
+.gallery{
+
+}
+
+
+.images_one{
+	width: 300px;
+	height: 160px;
+}
+.images_one-div{
+	float: left;
+}
+.images_two{
+	width: 300px;
+	height: 160px;
+}
+.images_two-div{
+	float: left;
+	margin-left: 20px;
+}
+.images_three{
+	width: 300px;
+	height: 160px;
+}
+.images_three-div{	
+	float: left;
+	margin-left: 20px;
+}
+.images_four{
+	width: 300px;
+	height: 160px;
+}
+.images_four-div{
+	float: left;
+	margin-left: 20px;
+}
