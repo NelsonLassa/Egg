@@ -1,0 +1,54 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+}
+
+.foto {
+    position: relative;
+    display: inline-block;
+}
+
+.foto img {
+    width: 100px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+    object-fit: cover;
+    transition: width 0.3s ease;
+    cursor: pointer;
+}
+
+.foto img:hover {
+    width: 300px;
+}
+
+.titulo {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    padding: 5px;
+}
+
+.foto:hover .titulo {
+    display: block;
+    opacity: 1;
+}
