@@ -1,0 +1,44 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body  .conteiner {
+    width: 800px;
+    height: 500px;
+    border: solid 1px black;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1.25fr 1.75fr;
+}
+body .conteiner .galeria{
+    border: solid 2px black;
+    display: flex;
+    flex-direction: column;
+}
+.grande{
+    width: 305px;
+    height: 300px;
+    border: solid 1px black;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+img{
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+img .despliegue{
+    width: 305px;
+    height: 300px;
+}
+.chica{
+    display: inline-flex;
+    /* justify-content: space-around; */
+}
