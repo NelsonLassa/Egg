@@ -1,0 +1,22 @@
+/*Ejercicio ancho de elementos*/
+@function calcular-porcentaje( $a , $b){
+  $calculo: ($a * $b) /100 ;
+  @return $calculo
+};
+
+
+.contenedor {
+    $ancho: 600px;
+    $porcentaje: 80;
+    border: 4px solid red;
+    height: calcular-porcentaje($ancho, $porcentaje);
+}
+/*Ejercicio Oscurecer color*/
+@function no-destenido($color, $porcentaje){
+    //Propiedad para oscurecer Darken
+    //@return darken($color,$porcentaje)
+    @return lighten($color,$porcentaje)
+};
+.contenedor{
+    background-color: no-destenido(yellow, 15% );
+}

@@ -1,0 +1,38 @@
+body {
+  background-color: rgb(126, 199, 223);
+}
+body h1, body h2 {
+  font-family: roboto;
+}
+
+/* Ejercicio de Variables de fuente*/
+p {
+  font-family: arial;
+}
+
+/* Ejercicio de Variables de espacio*/
+.a {
+  border: 10px solid gray;
+  margin: 10px 20px 30px 10px;
+  padding: 10px 20px 30px 10px;
+}
+
+.b {
+  border: 10px solid rebeccapurple;
+  margin: 30px;
+  padding: 20px;
+}
+
+/* Ejercicio de Variables de rutas de imagen*/
+body {
+  background-image: url("https://st2.depositphotos.com/1833015/8055/i/450/depositphotos_80552278-stock-photo-golden-retriever-puppy.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Ejercicio de Variables condicionales*/
+.a {
+  border-radius: 10%;
+}
+
+/*# sourceMappingURL=styles.css.map */

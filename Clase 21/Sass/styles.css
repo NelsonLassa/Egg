@@ -1,0 +1,12 @@
+/*Ejercicio ancho de elementos*/
+.contenedor {
+  border: 4px solid red;
+  height: 480px;
+}
+
+/*Ejercicio Oscurecer color*/
+.contenedor {
+  background-color: #ffff4d;
+}
+
+/*# sourceMappingURL=styles.css.map */

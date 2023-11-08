@@ -1,0 +1,48 @@
+$colorfondo: rgb(126, 199, 223);
+$tipoDeLetra: roboto ;
+body{
+    background-color: $colorfondo;
+    h1, h2{
+        font-family: $tipoDeLetra;
+    }
+}
+/* Ejercicio de Variables de fuente*/
+$tipoDeLetra: arial;
+p{
+    font-family: $tipoDeLetra;
+}
+/* Ejercicio de Variables de espacio*/
+$chico: 10px;
+$medio: 20px;
+$grande: 30px;
+.a{
+    border: $chico solid gray;
+    margin: $chico $medio $grande $chico;
+    //Distancia entre el elemento y su contenedor
+    padding: $chico $medio $grande $chico;
+}
+.b{
+    border: $chico solid rebeccapurple ;
+    margin: $grande;
+    padding: $medio;
+    }
+/* Ejercicio de Variables de rutas de imagen*/
+$imagen: "https://st2.depositphotos.com/1833015/8055/i/450/depositphotos_80552278-stock-photo-golden-retriever-puppy.jpg" ;
+body{
+    background-image: url("#{$imagen}");
+    //background-image: url($imagen); // Esto tambien funciona
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Ejercicio de Variables condicionales*/
+$francoHombre: true;
+@if $francoHombre {
+    .a {
+        border-radius: 10%;
+    }
+}@else {
+    .b{
+        border-radius: 10px;
+    }
+}
+$francoHombre: false;
