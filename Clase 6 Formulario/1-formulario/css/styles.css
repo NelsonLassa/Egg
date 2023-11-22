@@ -1,5 +1,5 @@
 body{
-    background-color: aqua;
+    background-color: lightsteelblue;
 }
 h1{
     display: flex;
@@ -8,4 +8,7 @@ h1{
 div{
     display: flex;
     justify-content: center;
+    border: black 3px solid;
+    height: 600px;
+
 }

@@ -6,7 +6,8 @@ body{
     background-color: beige;
     /* text-align: center; */
     display: grid;
-    justify-content: center;
+    /*justify-content: center;*/
+    justify-items: center;
     /* align-items: center; */
     
 }
