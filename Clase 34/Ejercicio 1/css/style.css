@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  color: #1b251c;
+}
+
+body {
+  font-family: 'Press Start 2P', sans-serif;
+  color: #1b251c;
+  background-color: #e8e2d4;
+  /* background-color: #60b347; */
+}
+
+.borders {
+  border-radius: 5px;
+  border: 2px solid #1b251c;
+}
+
+/* ----------------------- MEDIA QUERY ----------------------- */
+@media only screen and (max-width: 600px)  { 
+  #all {
+    width: 80vw!important;
+  }
+  header h1{
+    font-size: 12px!important;
+  }
+  header p{
+    font-size: 9px!important;
+  }
+}
+
+/* ----------------------- LAYOUT ----------------------- */
+
+.barra {
+  background-color: #e8e2d4;
+  width: 100%;
+  height: 30px;
+  margin: 0 auto;
+
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.barra img{
+  padding-top: 3px;
+  height: 30px;
+}
+
+#all {
+  background-color: #add2c1;
+  width: 700px;
+  margin: 0 auto;
+
+  padding: 10px 20px;
+  margin-top: 40px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 20px;
+
+  background-color: #e4c78f;
+
+
+
+  width: 100%;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+header p {
+  padding-top: 10px;
+}
+
+/* ----------------------- MAIN ----------------------- */
+
+.main-section{
+  display: flex;
+  justify-content:center;
+  align-content: center;
+
+  background-color: #e8e2d4;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.number {
+  background: #add2c1;
+  color: #1b251c;
+  font-size: 5rem;
+  text-align: center;
+
+  width: 12rem;
+
+  padding: 2.5rem;
+  margin-right: 5px;
+
+  border: 3px solid #1b251c;
+}
+
+.guess {
+  background: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: 3rem;
+  text-align: center;
+  
+  width: 11rem;
+
+  padding: 0.5rem;
+
+
+  border: 3px solid #1b251c;
+}
+
+.guessing_message {
+  background-color: #e4c78f;
+  background-color: #e4c78f;
+
+
+  margin-top: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+.right {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+/* ----------------------- BUTTONS ----------------------- */
+.buttons{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.btn {
+  border-radius: 4px;
+  border: 2px solid #1b251c;
+
+  background-color: #e8e2d4;
+
+  color: #222;
+  font-size: 1.5rem;
+  font-family: inherit;
+  text-transform: uppercase;
+
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #e8e2d4;
+  background-color: #222;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            padding-left: 50px;
+        }
+
+        ul li {
+            background-color: rgb(114, 114, 114);
+            width: 70px;
+            text-align: center;
+            border: 1px solid grey;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="list">
+        <li>OFF</li>
+        <li>OFF</li>
+        <li>OFF</li>
+        <li>OFF</li>
+        <li>OFF</li>
+        <li>OFF</li>
+    </ul>
+
+    <script>
+        const listItems = document.querySelector("#list")
+
+        const handleHover = (event) => {
+            return (event.target.innerText = "TURN ON");
+        };
+        if (listItems.length > 1) {
+            listItems.forEach((item) =>
+                item.addEventListener("mouseover", handleHover)
+            );
+        }
+    </script>
+</body>
+
+</html>
