@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito:wght@400;700&display=swap');
+
+/* Estilos generales*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+/* Fondo al html */
+body {
+    background-color: rgba(255, 221, 170, 0.316);
+}
+
+.header{
+    background-color: rgba(19, 154, 19, 0.934);
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; /*centra al medio verticar*/
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.header .logo{
+    cursor: pointer; /*cambia la forma del puntero*/
+    order: 3;
+    margin-left: auto;
+}
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+    border: 2px solid rgba(27, 83, 224, 0.934);
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .links{
+    list-style: none;
+}
+
+.header .links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .links li:hover{
+    transform: scale(1.1);
+}
+
+.header .links a{
+    font-size: 700;
+    color: #f3e9e9;
+    text-decoration: none;
+}
+
+.header .links a:hover{
+    color: blue;
+}
+
+.generales{
+    display: block;
+    text-align: center;
+}
+
+.generales .product{
+    display: inline-block;
+    
+}
