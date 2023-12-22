@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#conteiner {
+    display: flex;
+    justify-self: center;
+    gap: 20px;
+    margin: 10px;
+}
+
+#conteiner img {
+    width: 100px;
+    height: auto;
+}
+
+.divCervezas {
+    border: 1px solid grey;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+}
