@@ -1,0 +1,101 @@
+/*Activiad 1: Cambia fondo a la pagina*/
+body {
+    background-color: antiquewhite;
+}
+.logo{
+    height: 100px;
+    width: auto;
+}
+#nav1{
+    background-color: rgba(19, 154, 19, 0.934);
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; /*centra al medio verticar*/
+    height: 85px;
+    padding: 15px 15px;
+}
+/*Activiad 2: Cambiamos el color del texto o parrafo*/
+.lorem {
+    color: royalblue;
+    font-size: 20px;
+}
+/*Actividad 3: Cambia el color de fondo de un elemento div*/
+.claro {
+    background-color: lightblue;
+
+}
+/*Actividad 4: Aplica un borde alrededor de una imagen.*/
+/*Borde y radio de una imagen*/
+img {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+/*Actividad 5: Alinea un texto al centro de una página.*/
+p {
+    text-align: center;
+}
+/*Actividad 6: Cambia el tamaño de fuente de todos los párrafos dentro de un contenedor div.
+
+*/
+div p {
+    font-size: 30px;
+}
+/*Actividad 7: Agrega un efecto de sombra a un botón cuando se le pasa el cursor por encima.*/
+/*Resetear estilos por defecto del botón*/
+button{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+.boton{
+    background-color: #3498db; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: box-shadow 0.3s ease; /* Transición suave para el efecto de sombra */
+}
+.boton:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);/* Efecto de sombra con un poco de desenfoque */
+}
+/*Actividad 8: Cambia el color de fondo de un enlace al hacer clic en él*/
+
+footer a:active{ /* link clickeado */
+    color: red;
+}
+a:link{ /* link sin visitar */
+    color: yellow ;
+}
+/* Actividad 9: Centra horizontalmente un elemento de bloque dentro de su contenedor.*/
+
+h1 {
+    text-align: center;
+}
+div{
+    text-align: center;
+}
+/* Actividad 10: Estiliza una lista ordenada cambiando el estilo de los números.*/
+#center ol{
+    margin-top: 20px;
+    list-style-type: lower-roman; /* Tipo de marcador (numeros romanos) */
+    font-size: 19px; /* Tamaño de fuente para los elementos de la lista */
+    color: red; /* Color del texto de la lista */
+
+}
+
+/* Actividad 11: Crea un enlace que cambie de color cuando se le pasa el cursor por encima.*/
+
+a:hover{
+    color: chocolate;
+    font-size: 40px;
+}
+/* Actividad 12: Crea una clase CSS que haga que el texto esté en negrita.*/
+
+.texto-negrita{
+    font-weight: bolder;
+}
+/*La propiedad font-weight en CSS controla el grosor o peso 
+de la fuente de un elemento de texto. Puede tomar varios valores,
+y uno de los valores más comunes es bold, que indica texto en negrita*/
