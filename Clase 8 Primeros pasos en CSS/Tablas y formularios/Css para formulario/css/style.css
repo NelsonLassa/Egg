@@ -1,0 +1,37 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans:ital,wght@0,700;1,500&family=Nunito:wght@400;700&display=swap');
+
+ * {
+     font-family: 'Montserrat', sans-serif;
+     font-family: 'Noto Sans', sans-serif;
+     font-family: 'Nunito', sans-serif;
+     text-align: center;
+     
+ }
+ h1{
+    font-size: 35px;
+ }
+ form{
+    font-size: 20px;
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    margin-top: 150px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom,white,rgba(10, 10, 188, 0.84));
+ }
+ input{
+    width: auto;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #a12807fd;
+ }
+ button{
+    font-size: 22px;
+    margin-top: 40px ;
+    padding: 15px;
+    background-color: rgba(10, 196, 10, 0.705);
+    color: white;
+ }

@@ -1,0 +1,57 @@
+body {
+    background-color: darkgreen;
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Actividad 1: Cambiar el color de fondo de la tabla*/
+.table {
+    background-color: greenyellow;
+    margin-top: 30px;
+    /* Permite el unir las lineas de las celdas*/
+    border-collapse: collapse;
+}
+.info{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}   
+
+/* Actividad 2: Establecer un anchgo fijo para las celdas de la hoja*/
+
+td,th{
+   width: 100px;
+    /* Ancho fijo para las celdas */
+}
+
+/* Actividad 3: Aplicar bordes a las celdas de la tabla*/
+td,th {
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* Agregar bordes para mayor claridad */
+}
+
+/* Actividad 4: Alinear el texto al centro de las celdas*/
+.table {
+    text-align: center;
+}
+
+/* Actividad 5: Establecer un ancho fijo para la tabla y
+que tenga un margen automático para centrarla en la página*/
+.table {
+    width: 90%;
+    /*Forma de centrar*/
+    margin-left: auto;
+    margin-right: auto;
+    /*El encabezado de tabla es desplazado debajo de la misma*/
+    caption-side: bottom;
+}
