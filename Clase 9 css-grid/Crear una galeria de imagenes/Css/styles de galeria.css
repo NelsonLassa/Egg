@@ -1,0 +1,56 @@
+body {
+    background-color: orange;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 35px;
+    margin: 20px;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 25px;
+}
+
+img {
+    width: 415px;
+    height: 450px;
+}
+
+.container {
+    display: grid;
+    /*Comando que indica cuantas columnas tendras*/
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    /* Centra horizontalmente*/
+    justify-items: center;
+    margin-top: 100px;
+}
+
+.container div {
+    background: #ecf0f1;
+    width: 465px;
+    height: 550px;
+    padding: 1em;
+    text-align: center;
+}
+
+.container div:hover {
+    border: 1px solid black;
+    width: 550px;
+    height: 600px;
+    font-size: 35px;
+}
+
+.container div:hover p {
+    font-size: 35px;
+}
+.container div:hover img {
+    width: 465px;
+    height: 500px;
+}

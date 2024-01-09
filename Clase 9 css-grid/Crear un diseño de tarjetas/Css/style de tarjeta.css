@@ -1,0 +1,43 @@
+*{
+    background: #fdfd;
+}
+h1,h2{
+    text-align: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    justify-items: center;
+}
+.container div{
+    background: #ecf0f1;
+    width: 465px;
+    height: 370px;
+    padding: 2rem;
+    text-align: center;
+     /* Limpiar el float para evitar problemas con el contenedor hijo */
+     transition: background 0.9s ease, transform 0.3s ease, box-shadow 0.3s ease;
+     border-radius: 5px;
+}
+.container div img {
+    /* Asegurarse de que la imagen no desborde el
+    contenedor */
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.container div p {
+    /* Restablecer el fondo del párrafo */
+    background: transparent;
+    font-size: 25px;
+    line-height: 1.5;
+    color: #333;
+}
+.container div:hover {
+    background: rgba(185, 234, 21, 0.4);
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
