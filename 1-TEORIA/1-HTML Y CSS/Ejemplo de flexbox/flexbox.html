@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+<!-- 
+    display: flex;
+  1. flex-direction
+  2. flex-wrap
+  3. flex-flow
+  4. justify-content
+  5. align-content
+  6. place-content
+  7. align-items
+  8. align-self
+  9. flex-basis
+  10. flex-grow
+  11. flex-shrink 
+  12. flex
+  13. gap
+  14. column-gap
+  15. row-gap
+-->
+
+  <body style="font-family: 'Poppins', Sans-serif;">
+    <div class="container">
+      <h1>Propiedades Flexbox</h1>
+
+      <div class="container prop">
+        <h2>1.  flex-direction:</h2>
+        <small>
+          La propiedad flex-direction define el eje principal en la que se colocan los elementos flexibles en el contenedor flexible. Puede ser row, row-reverse, column o column-reverse.
+        </small>
+        <div class="option">
+          <h3>row</h3>
+          <div class="example " style="flex-direction: row;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>column</h3>
+          <div class="example " style="flex-direction: column;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>row-reverse</h3>
+          <div class="example " style="flex-direction: row-reverse;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>column-reverse</h3>
+          <div class="example " style="flex-direction: column-reverse;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container prop">
+        <h2>2.  flex-wrap:</h2>
+        <small>
+          La propiedad flex-wrap define si los elementos flexibles deben envolverse si no tienen suficiente espacio en el contenedor flexible. Puede ser nowrap, wrap o wrap-reverse.
+        </small>
+        <div class="option">
+          <h3>nowrap</h3>
+          <div class="example " style="flex-wrap: nowrap;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>wrap</h3>
+          <div class="example " style="flex-wrap: wrap;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>wrap-reverse</h3>
+          <div class="example " style="flex-wrap: wrap-reverse;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container prop">
+        <h2>3. flex-flow:</h2>
+        <small>
+          La propiedad flex-flow es una abreviación de las propiedades flex-direction y flex-wrap juntas. Es utilizada para establecer la dirección de los elementos flexibles y si los elementos deben o no envolver o "wrappear" cuando no caben en una sola línea.
+        </small>
+        <div class="option">
+          <h3>row nowrap</h3>
+          <div class="example " style="flex-flow: row nowrap;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>row wrap</h3>
+          <div class="example " style="flex-flow: row wrap;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>column nowrap</h3>
+          <div class="example " style="flex-flow: column nowrap;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>column wrap</h3>
+          <div class="example" style="flex-flow: column wrap;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container prop">
+        <h2>4. justify-content:</h2>
+        <small>
+          La propiedad justify-content es utilizada para alinear los elementos a lo largo del eje principal de los elementos flexibles.
+        </small>
+        <div>
+          <div>
+            <button onClick="cambiarEje('justify')" style="margin: 10px;">Cambiar eje principal</button>
+            <small >flex-direction: <span class="eje-justify">row</span></small>
+          </div>
+          <div>
+            <button onClick="cambiarWrap('justify')" style="margin: 10px;">Cambiar wrap</button>
+            <small >flex-wrap: <span class="wrap-justify">nowrap</span></small>
+          </div>
+        </div>
+        
+        <div class="option">
+          <h3>start</h3>
+          <div class="example-justify " style="justify-content: start;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>center</h3>
+          <div class="example-justify " style="justify-content: center;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>end</h3>
+          <div class="example-justify " style="justify-content: end;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>space-between</h3>
+          <div class="example-justify " style="justify-content: space-between;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>space-around</h3>
+          <div class="example-justify " style="justify-content: space-around;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>space-evenly</h3>
+          <div class="example-justify " style="justify-content: space-evenly;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container prop">
+        <h2>5. align-content:</h2>
+        <small>
+          La propiedad align-content es utilizada para alinear y distribuir los elementos flexibles verticalmente dentro del contenedor flexible cuando hay espacio adicional disponible en la columna o filas(flex-wrap: wrap;).
+        </small>
+        <div>
+          <div>
+            <button onClick="cambiarEje('align')" style="margin: 10px;">Cambiar eje principal</button>
+            <small >flex-direction: <span class="eje-align">row</span></small>
+          </div>
+          <div>
+            <button onClick="cambiarWrap('align')" style="margin: 10px;">Cambiar wrap</button>
+            <small >flex-wrap: <span class="wrap-align">nowrap</span></small>
+          </div>
+        </div>
+        <div class="option">
+          <h3>start</h3>
+          <div class="example-align " style="align-content: start;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>center</h3>
+          <div class="example-align " style="align-content: center;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>end</h3>
+          <div class="example-align " style="align-content: end;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>space-between</h3>
+          <div class="example-align " style="align-content: space-between;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>space-around</h3>
+          <div class="example-align " style="align-content: space-around;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option" >
+          <h3>stretch</h3>
+          <div class="example-align " style="align-content: stretch;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container prop">
+        <h2>6. place-content:</h2>
+        <small>
+          La propiedad place-content es utilizada para alinear y distribuir los elementos flexibles tanto horizontal como verticalmente dentro del contenedor flexible, cuando hay espacio adicional disponible en la columna o filas(flex-wrap: wrap;).
+        </small>
+        <div style="text-align: left; margin: 10px;">
+          <small >
+            place-content: align-content | justify-content;
+          </small>
+        </div>
+        <div style="position: sticky; top: 5px">
+          <button onClick="cambiarEje('place')" style="margin: 10px;">Cambiar eje principal</button>
+          <small >flex-direction: <span class="eje-place">row</span></small>
+          <button onClick="cambiarWrap('place')" style="margin: 10px;">Cambiar wrap</button>
+          <small >flex-wrap: <span class="wrap-place">nowrap</span></small>
+        </div>
+        <div class="option">
+          <h3>start | start</h3>
+          <div class="example-place " style="place-content: start start;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>center | center</h3>
+          <div class="example-place " style="place-content: center center;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>end | end</h3>
+          <div class="example-place " style="place-content: end end;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>space-between | space-between</h3>
+          <div class="example-place " style="place-content: space-between space-between;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>space-around | space-around</h3>
+          <div class="example-place " style="place-content: space-around space-around;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>stretch | space-evenly</h3>
+          <div class="example-place " style="place-content: stretch space-evenly;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container prop">
+        <h2>7. align-items:</h2>
+        <small>
+          La propiedad align-items define cómo se alinean los elementos flexibles en el eje transversal (verticalmente) dentro del contenedor flex. Es similar a justify-content, pero en lugar de alinear los elementos a lo largo del eje principal, alinea los elementos a lo largo del eje transversal.
+        </small>
+        <button onClick="cambiarEje('align')" style="margin: 10px;">Cambiar eje principal</button>
+        <small >flex-direction: <span class="eje-align">row</span></small>
+        <button onClick="cambiarWrap('align')" style="margin: 10px;">Cambiar wrap</button>
+        <small >flex-wrap: <span class="wrap-align">nowrap</span></small>
+        <div class="option">
+          <h3>start</h3>
+          <div class="example-align " style="align-items: start;">
+            <div>hijo flex</div>
+            <div style="font-size: 20px;">hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>baseline</h3>
+          <div class="example-align " style="align-items: baseline;">
+            <div>hijo flex</div>
+            <div  style="font-size: 20px;">hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>center</h3>
+          <div class="example-align " style="align-items: center;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>flex-end</h3>
+          <div class="example-align " style="align-items: flex-end;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>stretch</h3>
+          <div class="example-align " style="align-items: stretch;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container prop">
+        <h2>8. align-self:</h2>
+        <small>
+          La propiedad align-self permite a un elemento flex ajustar su posición vertical dentro de su contenedor flexible.
+        </small>
+        <button onClick="cambiarEje('align')" style="margin: 10px;">Cambiar eje principal</button>
+        <small >flex-direction: <span class="eje-align">row</span></small>
+        <button onClick="cambiarWrap('align')" style="margin: 10px;">Cambiar wrap</button>
+        <small >flex-wrap: <span class="wrap-align">nowrap</span></small>
+        <div class="option">
+          <h3>start</h3>
+          <div class="example-align ">
+            <div style="align-self: start;">hijo flex</div>
+            <div style="align-self: start;font-size: 20px;">hijo flex</div>
+            <div >hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>baseline</h3>
+          <div class="example-align ">
+            <div style="align-self: baseline;">hijo flex</div>
+            <div style="align-self: baseline;font-size: 20px;">hijo flex</div>
+            <div >hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>center</h3>
+          <div class="example-align ">
+            <div>hijo flex</div>
+            <div style="align-self: center;">hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>end</h3>
+          <div class="example-align ">
+            <div>hijo flex</div>
+            <div style="align-self: end;">hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>stretch</h3>
+          <div class="example-align ">
+            <div>hijo flex</div>
+            <div style="align-self: stretch;">hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-prop">
+        <h2>9. flex-basis:</h2>
+        <small>
+          La propiedad flex-basis establece el tamaño base para los elementos flexibles antes de que se distribuyan en el contenedor.
+        </small>
+        <div class="option">
+          <h3>1 | nada | nada</h3>
+          <div class="example">
+            <div style="flex-basis: 1;">hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>3 | 1 | 1</h3>
+          <div class="example">
+            <div style="flex-basis: 3;">hijo flex</div>
+            <div style="flex-basis: 1;">hijo flex</div>
+            <div style="flex-basis: 1;">hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>100% | 50% | 25%</h3>
+          <div class="example">
+            <div style="flex-basis: 100%;">hijo flex</div>
+            <div style="flex-basis: 50%;">hijo flex</div>
+            <div style="flex-basis: 25%;">hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>60px | 200px | 60px</h3>
+          <div class="example">
+            <div style="flex-basis: 60px;">hijo flex</div>
+            <div style="flex-basis: 200px;">hijo flex</div>
+            <div style="flex-basis: 60px;">hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>auto | nada | auto</h3>
+          <div class="example">
+            <div style="flex-basis: auto;">hijo flex</div>
+            <div >hijo flex</div>
+            <div style="flex-basis: auto;">hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>max-content | min-content | fit-content</h3>
+          <div class="example">
+            <div style="flex-basis: max-content;">hijo flex con más contenido</div>
+            <div style="flex-basis: min-content;">hijo flex con más contenido</div>
+            <div style="flex-basis: fit-content;">hijo flex con más contenido</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>max-content | min-content | fit-content</h3>
+          <div style="width: max-content;">hijo flex con más contenido</div>
+          <div style="width: min-content;">hijo flex con más contenido</div>
+          <div style="width: fit-content;">hijo flex con más contenido</div>  
+        </div>
+      </div>
+      
+      <div class="flex-prop">
+        <h2>10. flex-grow:</h2>
+        <small>
+          La propiedad flex-grow especifica la cantidad de espacio adicional que el elemento hijo flex puede ocupar en relación con los demás elementos hijo flex dentro del contenedor flex.
+        </small>
+        <div class="option">
+          <h3>1 | nada | nada</h3>
+          <div class="example">
+            <div style="flex-grow: 1;">hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>1 | 1 | 1</h3>
+          <div class="example">
+            <div style="flex-grow: 1;">hijo flex</div>
+            <div style="flex-grow: 1;">hijo flex</div>
+            <div style="flex-grow: 1;">hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>2 | 1 | 1</h3>
+          <div class="example">
+            <div style="flex-grow: 2;">hijo flex</div>
+            <div style="flex-grow: 1;">hijo flex</div>
+            <div style="flex-grow: 1;">hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>3 | 1 | 1</h3>
+          <div class="example">
+            <div style="flex-grow: 3;">hijo flex</div>
+            <div style="flex-grow: 1;">hijo flex</div>
+            <div style="flex-grow: 1;">hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>0.5 | 1 | 1</h3>
+          <div class="example">
+            <div style="flex-grow: 0.5;">hijo flex</div>
+            <div style="flex-grow: 1;">hijo flex</div>
+            <div style="flex-grow: 1;">hijo flex</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-prop">
+        <h2>11. flex-shrink:</h2>
+        <small>
+          La propiedad flex-shrink especifica la capacidad de un elemento hijo flex para reducir su tamaño en relación con los demás elementos hijo flex dentro del contenedor flex cuando no hay suficiente espacio disponible en la línea.
+        </small>
+        <div class="option">
+          <h3>1 | nada | 0</h3>
+          <div class="example">
+            <div style="flex-shrink: 1;">hijo flex</div>
+            <div >hijo flex</div>
+            <div style="flex-shrink: 0;">hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>1 | 0 | 1</h3>
+          <div class="example">
+            <div style="flex-shrink: 1;">hijo flex</div>
+            <div style="flex-shrink: 0;">hijo flex</div>
+            <div style="flex-shrink: 1;">hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>2 | 1 | 1</h3>
+          <div class="example">
+            <div style="flex-shrink: 2;">hijo flex</div>
+            <div style="flex-shrink: 1;">hijo flex</div>
+            <div style="flex-shrink: 1;">hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>3 | 1 | 1</h3>
+          <div class="example">
+            <div style="flex-shrink: 3;">hijo flex</div>
+            <div style="flex-shrink: 1;">hijo flex</div>
+            <div style="flex-shrink: 1;">hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>0.5 | 1 | 1</h3>
+          <div class="example">
+            <div style="flex-shrink: 0.5;">hijo flex</div>
+            <div style="flex-shrink: 1;">hijo flex</div>
+            <div style="flex-shrink: 1;">hijo flex</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="flex-prop">
+        <h2>12. flex:</h2>
+        <small>
+          La propiedad flex es una forma abreviada de especificar las propiedades flex-basis, flex-grow y flex-shrink. 
+        </small>
+        <small style="text-align: left;">
+          flex: flex-grow | flex-shrink | flex-basis;
+        </small>
+        <small style="text-align: left;">
+          flex: none; -> 0 0 auto 
+        </small>
+        <small style="text-align: left;">
+          flex: 2; -> Un valor número sin unidades: flex-grow 
+        </small>
+        <small style="text-align: left;">
+          flex: 2 2; -> Dos valores número sin unidades: flex-grow | flex-shrink 
+        </small>
+        <small style="text-align: left;">
+          flex: 2px; -> Un valor número con algún tipo de unidad de medida: flex-basis 
+        </small>
+        <small style="text-align: left;">
+          flex: 2 2px; -> Dos valores número y uno con algún tipo de unidad de medida:  flex-grow | flex-basis
+        </small>
+        
+        <div class="option">
+          <h3>2 1 25px | none | 2 1 100px</h3>
+          <div class="example" style="flex: 1;">
+            <div style="flex: 2 1 25px;">hijo flex</div>
+            <div style="flex: none;">hijo flex</div>
+            <div style="flex: 2 1 100px;">hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>50px | 2 | 1 3</h3>
+          <div class="example" style="flex: 1;">
+            <div style="flex: 50px;">hijo flex</div>
+            <div style="flex: 2;">hijo flex</div>
+            <div style="flex: 1 3;">hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>1 150px | 4 150px | 1 3 200px</h3>
+          <div class="example" style="flex: 1;">
+            <div style="flex: 1 150px;">hijo flex</div>
+            <div style="flex: 4 150px;">hijo flex</div>
+            <div style="flex: 1 3 200px;">hijo flex</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container prop">
+        <h2>13. gap, 14. column-gap y 15. row-gap:</h2>
+        <small>
+          La propiedad gap establece el espacio entre elementos flexibles. La propiedad column-gap establece el espacio entre columnas y la propiedad row-gap establece el espacio entre filas.
+        </small>
+      
+        <div class="option">
+          <h3>gap: 20px;</h3>
+          <div class="example " style="flex-wrap: wrap; gap: 20px;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>column-gap: 20px;</h3>
+          <div class="example " style="flex-wrap: wrap;column-gap: 20px;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+        <div class="option">
+          <h3>row-gap: 20px;</h3>
+          <div class="example " style="flex-wrap: wrap; row-gap: 20px;">
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+            <div>hijo flex</div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+
+    </div>
+    <script>
+      function cambiarEje(nameContent) {
+        const contents = document.getElementsByClassName("example-"+nameContent)
+        for (let i = 0 ; i < contents.length; i++) {
+          contents[i].classList.toggle("column");
+        }
+        const ejes = document.getElementsByClassName("eje-"+nameContent)
+        for (let i = 0 ; i < ejes.length; i++) {
+          ejes[i].innerHTML = contents[0].classList.contains("column") ? "column" : "row"
+        }
+      }
+      function cambiarWrap(nameContent) {
+        const contents = document.getElementsByClassName("example-"+nameContent)
+        for (let i = 0 ; i < contents.length; i++) {
+          contents[i].classList.toggle("wrap");
+        }
+        const wraps = document.getElementsByClassName("wrap-"+nameContent)
+        for (let i = 0 ; i < wraps.length; i++) {
+          wraps[i].innerHTML = contents[0].classList.contains("wrap") ? "wrap" : "nowrap"
+        }
+        
+      }
+    </script>
+  </body>
+</html>

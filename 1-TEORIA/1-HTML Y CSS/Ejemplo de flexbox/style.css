@@ -1,0 +1,134 @@
+  .container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .prop {
+    border: solid blue 5px;
+    padding: 5%;
+    margin:2%;
+    border-radius: 10%;
+  }
+ 
+.option>div{
+    width: 100%;
+    border: orange 2px dotted;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+}
+
+.option>div>div {
+    width: 120px;
+    height: 120px;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  
+  h2 {
+    margin: auto;
+  }
+  
+  h3 {
+    margin: 10px 0;
+  }
+
+.option>div.example-justify.column {
+    height: 150px;
+    flex-direction: column;
+}
+.option>div.example-justify.column.wrap {
+  height: 80px;
+}
+.option>div.example-justify.wrap {
+  width: 180px;
+  margin: auto;
+}
+
+
+.option>div.example-align {
+  height: 120px;
+}
+.option>div.example-align.column {
+    flex-direction: column;
+}
+.option>div.example-align.column.wrap {
+  width: 100%;
+  height: 30px;
+}
+.option>div.example-align.wrap {
+  height: 150px;
+  width: 70px;
+  margin: auto;
+}
+
+
+.option>div.example-align>div {
+    width: auto;
+    height: auto;
+}
+.option>div.example-justify>div{
+    width: auto;
+    height: auto;
+}
+.option>div.example-place>div{
+  width: auto;
+  height: auto;
+}
+  
+.wrap {
+    flex-wrap: wrap;
+}
+
+.flex-prop {
+    border: solid blue 5px;
+    padding: 5%;
+    margin:2%;
+    border-radius: 10%;
+    flex: 1;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.option>div.example-place {
+  height: 150px;
+}
+.option>div.example-place.column {
+    flex-direction: column;
+}
+
+.option>div.example-place.wrap {
+ 
+}
+
+.option>div>div:nth-child(1) {
+  background-color: #ff5733;
+}
+.option>div>div:nth-child(2) {
+  background-color: #33ff80;
+}
+.option>div>div:nth-child(3) {
+  background-color: #337aff;
+}
+.option>div>div:nth-child(4) {
+  background-color: #ff8533;
+}
+.option>div>div:nth-child(5) {
+  background-color: #f9957e;
+}
+.option>div>div:nth-child(6) {
+  background-color: #aafdca;
+}
+.option>div>div:nth-child(7) {
+  background-color: #8bb2fa;
+}
+.option>div>div:nth-child(8) {
+  background-color: #f9c6a4;
+}
