@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,700;1,400&display=swap');
+
+* {
+    background: #A04000;
+    font-family: 'PT Serif', serif;
+}
+
+/*Barra de navegación*/
+/* 1. Un fondo de color claro y un espacio interno de 10px*/
+nav {
+    padding: 10px;
+    background: #E9967A;
+    border: 5px solid #800000;
+    margin: 10px;
+}
+
+/* 2.los elementos deben estar 
+alineados horizontalmente
+y centrados en la barra*/
+nav {
+    display: flex;
+    /*centra en el eje principal que seria horizontal*/
+    /* Es decir tiene el flex dirección en filas*/
+    justify-content: center;
+    /* centra el contenido en el eje secundario este
+    seria el de las columnas*/
+    align-items: center;
+}
+
+/* 3. Agregar la clase 'nav-link' y a los elementos 
+    deben 10 píxeles de relleno vertical y 15 píxeles
+    de relleno horizontal */
+nav a.nav-link {
+    padding: 10px 15px;
+}
+/* 4.Entre cada enlace debe haber un margen horizontal 
+    de 5 píxeles para crear un espacio uniforme.*/
+nav a.nav-link{
+    margin-right: 5px;
+}
+/* 5.El primer enlace no debe tener margen izquierdo 
+y el último enlace no debe tener margen derecho. */
+nav a.nav-link:first-child{
+    /* primer enlace*/
+    margin-left: 0;
+}
+nav a.nav-link:last-child{
+    /* ultimo enlace*/
+    margin-right: 0;
+}
+/* 6. Al pasar el cursor sobre los enlaces,
+    deben cambiar su color de fondo a un tono
+    mas oscuro*/
+nav a.nav-link {
+    /*Retoques previos al hover para su apreciación*/
+    background: #C0C0C0;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+nav a.nav-link:hover{
+    background: #808080	;
+}
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+img {
+    width: 500px;
+    height: 400px;
+    border-radius: 4%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-items: center;
+
+
+}
+
+.container div {
+    width: 600px;
+    height: 600px;
+    padding: 2rem;
+    text-align: center;
+    background: #FFA07A;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+
+.container div p {
+    background: transparent;
+    font-size: 25px;
+}
