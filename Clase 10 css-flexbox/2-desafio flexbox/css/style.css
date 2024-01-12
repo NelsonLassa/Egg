@@ -1,0 +1,16 @@
+/* 1. Configuración general del cuerpo (body): 
+define la tipografía, el color de fondo y el margen.*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400&display=swap');
+*{
+    font-family: 'Source Code Pro', monospace;
+    background-color: #5D6D7E;
+    margin: 15px 10px 5px 20px;
+}
+a{
+    background: transparent;
+}
+nav{
+    padding: 20px;
+    border: 2px solid #000080;
+    background: #85929E;
+}
