@@ -1,0 +1,62 @@
+/* 1. El contenedor principal debe ocupar el 100% del ancho 
+y el alto de la ventana del navegador, con un fondo de color.
+Alinear vertical y horizontalmente su contenido*/
+* {
+	margin: 0;
+	padding: 0;
+}
+.container {
+    width: 100%;
+	/* vh altura del área de visualizacion*/
+    height: 100vh;
+    background-color: #5499C7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 2. La galería de imagenes debe estar centrada horizontalmente
+y debe mostrar las imagenes en una línea, alineadas verticalmente en el centro*/
+.gallery {
+    display: flex;
+    justify-content: center;
+}
+.imagen {
+    position: relative;
+    display: inline-block;
+}
+/* 3. Cada imagen puede tener un tamaño de 100px de ancho y
+500px de alto, con un margen de 10px y los bordes redondeados*/
+.imagen img {
+    width: 100px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+	/* Ajuste de la imagen en el contenedor*/
+    object-fit: cover;
+}
+/* 4. Las imagenes deben tener un efecto de transición al pasar el cursor
+sobre ellas, expandiendose a un ancho de 300px. El cursor puede cambiar 
+a una mano ara incicar que son interactivas.*/
+.imagen img{
+	transition: width 0.3s ease;
+    cursor: pointer;
+}
+
+.imagen img:hover{
+	width: 300px;
+}
+h3{
+	display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    padding: 5px;
+}
+.imagen:hover h3{
+	display: block;
+    opacity: 1;
+}
