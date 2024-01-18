@@ -51,11 +51,10 @@ div {
     height: 700px;
     background-image: linear-gradient(100deg, #FDFEFE, #85929E);
     gap: 5px;
-    box-sizing: border-box;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    /*align-items: flex-start*/ ;
 }
 
 img {
@@ -68,6 +67,7 @@ h3,
 div p,
 button {
     background: none;
+    
 }
 
 h3 {
@@ -75,15 +75,22 @@ h3 {
 }
 
 div p.price{
+    margin-left: 5px;
     font-weight: bold;
     font-size: large;
-    text-align: left;
-
+    transition: 0.5s;    
+}
+div p.price:hover{
+    font-size: x-large;
 }
 
 button {
+    margin: 5px;
+    padding: 5px;
     background: #FDFEFE;
     border: 1px solid grey;
     border-radius: 5px;
 }
-
+button::selection{
+    background: aquamarine;
+}
