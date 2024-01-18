@@ -5,11 +5,10 @@ define la tipografía, el color de fondo y el margen.*/
 * {
     font-family: 'Source Code Pro', monospace;
     background-color: #5D6D7E;
-    margin: 15px 10px 5px 20px;
+    margin: 15px 10px 5px 15px;
 }
 
-h1,
-div h3 {
+h1 {
     text-align: center;
 }
 
@@ -43,14 +42,21 @@ el borde, el relleno y los margenes.
 el nombre (h3) la descripción, el precio (price) y 
 el botón de agregar al carrito (button)*/
 section {
-    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 600px 600px;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+
+    gap: 2px;
 }
 
 div {
-    width: 550px;
-    height: 700px;
+    width: 500px;
+    height: 720px;
     background-image: linear-gradient(100deg, #FDFEFE, #85929E);
     gap: 5px;
+    text-align: center;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -76,21 +82,52 @@ h3 {
 
 div p.price{
     margin-left: 5px;
+    align-self: flex-start;
     font-weight: bold;
     font-size: large;
-    transition: 0.5s;    
+    transition: 0.5s;
 }
 div p.price:hover{
-    font-size: x-large;
+   color: red;
 }
-
 button {
+    padding: 5px;
     margin: 5px;
     padding: 5px;
     background: #FDFEFE;
     border: 1px solid grey;
     border-radius: 5px;
+    transition: 0.6s;
 }
 button::selection{
     background: aquamarine;
+}
+button:hover{
+    box-shadow: 3px 2px 10px #F4D03F;
+    background: black;
+    color: yellow;
+}
+/* Estilos del pie de página (footer):
+- Establecer el color de fondo
+- Relleno
+- Color de texto
+- El alineamiento del texto para el pie de página*/
+footer{
+    margin-top: 20px;
+    width: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+}
+footer p{
+    align-self: self-end;
+    background: none;
+    color: #85929E;
+}
+
+footer a{
+    font-size: small;
+}
+footer a:hover{
+    font-size: medium;
 }
