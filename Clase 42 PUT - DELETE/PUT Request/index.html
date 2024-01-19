@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUT request con API de Pokemon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Actualizar Pokemon</h1>
+    <form id="pokemonForm">
+        <div>
+            <label for="pokemonId">ID del Pokemon: </label>
+            <input type="number" id="pokemonId" required>
+        </div>
+        <div>
+            <label for="newName">Nuevo Nombre: </label>
+            <input type="text" id="newName" required>
+        </div>
+        <div>
+            <label for="newType">Nuevo Tipo: </label>
+            <input type="text" id="newType" required>
+        </div>
+        <button type="submit">Actualizar Pokemon</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
