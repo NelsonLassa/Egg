@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400&display=swap');
+
+*{
+    font-family: 'Source Code Pro', monospace;
+    margin: 5px 10px 5px 15px;
+}
+a {
+    font-weight: bold;
+    font-size: 25px;
+    gap: 5px;
+    text-decoration: none;
+    background: transparent;
+}
+body{
+    background-image: url("../img/52_1000x.webp");
+    background-position: center ;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    background-image: linear-gradient(100deg, #D5D7D7, #C8AC96);
+    padding: 25px;
+
+}
