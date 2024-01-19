@@ -26,3 +26,50 @@ nav{
     padding: 25px;
 
 }
+#recetaContainer{
+    background-image:linear-gradient(100deg, rgba(200, 172, 150, 0.8), rgba(213, 215, 215, 0.8)) ;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 50px;
+    display: inline-grid;
+    grid-template-columns: auto auto auto ;
+    align-items: start;
+}
+#recetaContainer h1{
+    text-align: center;
+    text-decoration: underline;
+    grid-column-start: 1 ;
+    grid-column-end: 5;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+#recetaContainer img{
+    width: 450px;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    grid-row-start: 2;
+    grid-row-end: 6;
+}
+#recetaContainer h3{
+    text-align: center;
+}
+#tituloParrafo{
+    /* grid-row-start: 2;
+    grid-row-end: 3; */
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+#tituloLista{
+    
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+#recetaContainer p{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}

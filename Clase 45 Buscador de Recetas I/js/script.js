@@ -18,7 +18,7 @@ async function mostrarReceta() {
   const recetaABuscar = document.getElementById("miInput").value;
   console.log(recetas);
   console.log(recetaABuscar);
-  recetas.forEach(receta => {
+  recetas.forEach((receta) => {
     for (let i = 1; i <= 20; i++) {
       const ingrediente = receta[`strIngredient${i}`];
       if (ingrediente && ingrediente.toLowerCase() === recetaABuscar) {
@@ -29,20 +29,30 @@ async function mostrarReceta() {
         nombre.textContent = receta.strMeal;
         let imagen = document.createElement("img");
         imagen.src = receta.strMealThumb;
+        let metodo = document.createElement("h3");
+        metodo.textContent = "Instructions for preparation";
+        metodo.id = "tituloParrafo";
         let mensaje = document.createElement("p");
         mensaje.textContent = receta.strInstructions;
+        let listaIngrediente = document.createElement("h3");
+        listaIngrediente.textContent = "Ingredients";
+        listaIngrediente.id = "tituloLista";
         const ingredientesDeRecetas = document.createElement("ul");
         for (let i = 1; i <= 20; i++) {
           const ingrediente = receta[`strIngredient${i}`];
           if (ingrediente) {
             const liElement = document.createElement("li");
-            liElement.textContent = `${ingrediente} - ${receta[`strMeasure${i}`]}`;
+            liElement.textContent = `${ingrediente} - ${
+              receta[`strMeasure${i}`]
+            }`;
             ingredientesDeRecetas.appendChild(liElement);
           }
         }
         contenedor.appendChild(nombre);
         contenedor.appendChild(imagen);
+        contenedor.appendChild(metodo);
         contenedor.appendChild(mensaje);
+        contenedor.appendChild(listaIngrediente);
         contenedor.appendChild(ingredientesDeRecetas);
         muestraReceta.appendChild(contenedor);
       }
