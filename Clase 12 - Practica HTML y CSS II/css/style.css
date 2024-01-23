@@ -47,6 +47,7 @@ h3 {
     height: 600px;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .container div {
