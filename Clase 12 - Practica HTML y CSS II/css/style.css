@@ -86,7 +86,12 @@ h3 {
 }
 
 .buttons {
-    display: contents;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 35%;
+    
+    
 }
 
 .buttons button {
@@ -98,23 +103,25 @@ h3 {
 
 .buttons #linkedin {
     background: blue;
-    display: flex;
     box-shadow: 5px 5px 5px rgba(45, 82, 244, 0.728);
-
 }
 
 .buttons #git {
     background: #E74C3C;
     box-shadow: 5px 5px 5px rgba(222, 74, 20, 0.52);
-
 }
 
 .buttons #email {
     box-shadow: 5px 5px 5px rgba(222, 74, 20, 0.52);
-
 }
 
 a {
     text-decoration: none;
     font-size: 15px;
+}
+#presentacion{
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    text-align: left;
 }
