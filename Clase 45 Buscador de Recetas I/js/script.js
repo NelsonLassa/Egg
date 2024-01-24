@@ -13,9 +13,10 @@ botonParaBuscar.addEventListener("click", () => {
 
 async function mostrarReceta() {
   const muestraReceta = document.getElementById("container");
-
+  // Limpiar la lista de recetas antes de mostrar nuevas
+  muestraReceta.innerHTML=""; 
   let recetas = await obtenerReceta();
-  const recetaABuscar = document.getElementById("miInput").value;
+  const recetaABuscar = document.getElementById("miInput").value.toLowerCase();
   console.log(recetas);
   console.log(recetaABuscar);
   recetas.forEach((receta) => {

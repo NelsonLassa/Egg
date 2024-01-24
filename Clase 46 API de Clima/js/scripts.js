@@ -9,7 +9,7 @@ async function obtenerClima() {
     }
 
     try{
-        const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${apikey}&q=${nombreCiudad}`);
+        const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${apikey}&q=${nombreCiudad}&lang=es`);
         const data = await response.json();
 
         if( data.error){
@@ -26,9 +26,9 @@ async function obtenerClima() {
 function mostrarClima(data){
     const respuesta = document.getElementById('respuesta');
     respuesta.innerHTML= `<h2>${data.location.region}</h2>
-    <h3>${data.current.temp_c} °C</h3>
-    <h3>${data.current.humidity} %</h3>
-    <h3>${data.current.condition.text}</h3>
+    <h3>Temperatura: ${data.current.temp_c} °C</h3>
+    <h3>Porcentaje de humedad: ${data.current.humidity} %</h3>
+    <p><strong>Estado:</strong> ${data.current.condition.text}</p>
     <h3>${data.current.wind_kph}</h3>`
 
 

@@ -3,16 +3,17 @@ body{
     background-image: url("../img/28.png");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed ;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .respuesta{
-    background-color: #006CC9;
+    background-color: rgba(0, 108, 201, 0.8);
     border: 2px solid #222E24;
     border-radius: 10px;
     padding: 15px;
     margin-top: 50px;
-
+    height: 300px;
+    width: 200px;
 }
