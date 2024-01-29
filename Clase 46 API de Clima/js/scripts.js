@@ -24,15 +24,19 @@ async function obtenerClima() {
 }
 
 function mostrarClima(data){
-    const respuesta = document.getElementById('respuesta');
-    respuesta.innerHTML= `<h2>${data.location.region}</h2>
-    <h3>Temperatura: ${data.current.temp_c} °C</h3>
-    <h3>Porcentaje de humedad: ${data.current.humidity} %</h3>
-    <p><strong>Estado:</strong> ${data.current.condition.text}</p>
-    <h3>${data.current.wind_kph}</h3>`
-
-
-
-
+    const respuesta1 = document.getElementById('respuesta1');
+    respuesta1.innerHTML= `
+    <h1>Ubicación</h1>
+    <h2>Ciudad: ${data.location.name}</h2>
+    <h2>País: ${data.location.country}</h2>
+    <h3>Región: ${data.location.region}</h3>`
     
+    const respuesta2 = document.getElementById('respuesta2');
+    respuesta2.innerHTML= `   
+    <h1>Estado del Tiempo</h1>
+    <h3>Temperatura: ${data.current.temp_c} °C</h3>
+    <h3>Humedad: ${data.current.humidity} %</h3>
+    <h2><strong>Estado: </strong> ${data.current.condition.text}</h2>
+    <img src="${data.current.condition.icon}" alt="estado">
+    <h3>Velocidad: ${data.current.wind_kph} km/h</h3>`
 }
