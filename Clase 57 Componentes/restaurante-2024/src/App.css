@@ -1,0 +1,29 @@
+#root{
+  text-align: center;
+  margin: 0;
+  height: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor {
+  margin: 10px;
+  padding: 10px;
+  border: white solid 1px;
+  margin: auto;
+
+}
+
+.contenedor img {
+  height: 200px;
+  max-height: 200px;
+  width: auto;
+  max-width: 300px;
+}
+
+.postres {
+  display: flex;
+  justify-content: center;
+}
