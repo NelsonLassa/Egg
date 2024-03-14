@@ -4,7 +4,11 @@ const Titulos =() =>{
     return(
         <div>
             {/*  */}
-            <h1>Plato Fuerte</h1>
+            <h1>Postres</h1>
+            <p>Estos son la lista de Postres con los que podras conocer nuevos gustos
+                para desgustar, alegrandote la vida
+                
+            </p>
         </div>
     )
 };
