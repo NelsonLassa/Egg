@@ -12,7 +12,7 @@ function App() {
         <ListaPlato />
       </div>
     </div>
-      
+
     </>
   );
 }
