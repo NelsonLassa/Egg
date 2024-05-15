@@ -15,10 +15,10 @@ public class DivisionSegura {
 //         Instanciamos la clase Scanner para poder tratar por consola el ingreso de los datos
         Scanner entrada = new Scanner(System.in);
         System.out.print("Ingresa un valor: ");
-        int denominador = 0;
+
         float divi = 0;
         try {
-            divi = 10 / entrada.nextInt();
+            divi = 10 / entrada.nextFloat();
 
             System.out.println("divi = " + divi);
 
@@ -43,7 +43,7 @@ public class DivisionSegura {
         try {
             int numerador2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor del numerador:"));
             int denominador2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor del denominador"));
-            cociente = numerador2 / denominador2;
+            cociente = (double) numerador2 / denominador2;
             JOptionPane.showMessageDialog(null, "El valor es: " + cociente);
 
         } catch (ArithmeticException error) {
