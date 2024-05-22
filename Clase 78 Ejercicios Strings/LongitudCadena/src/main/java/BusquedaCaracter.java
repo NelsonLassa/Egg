@@ -6,9 +6,5 @@ Mostrar un mensaje adecuado en pantalla indicando si el carácter se encuentra o
 */
 public class BusquedaCaracter {
 
-    public static void main(String[] args) {
 
-        String cadena
-
-    }
 }
