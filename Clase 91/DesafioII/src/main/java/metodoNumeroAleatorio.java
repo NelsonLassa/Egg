@@ -1,13 +1,12 @@
 import javax.swing.*;
-import java.util.Random;
 
-public class contrasena {
+public class metodoNumeroAleatorio {
 
     public static void main(String[] args) {
 
-        JOptionPane.showMessageDialog(null,"El valor aleatorio es: "+numeroAleatoreo());
+        JOptionPane.showMessageDialog(null,"El valor aleatorio es: "+numeroAleatorio());
     }
-    public static int numeroAleatoreo(){
+    public static int numeroAleatorio(){
         int alem = (int) Math.floor(Math.random()*100)+1;
         System.out.println("El numero aleatorio es: "+alem);
         return alem;
